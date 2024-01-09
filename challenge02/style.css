@@ -12,6 +12,17 @@
  * You may modify the HTML if needed
  * (you probably should for this challenge)
  *
+ * SOLUTION
+ * 
+ * Changes in HTML
+ * 1) Create an `intro` class around our container, which we can add the background color to.
+ * 2) Add a container around the additional content
+ * 
+ * Changes in CSS
+ * 1) Moved content from .container to .intro as appropriate, and add padding top/bottom to .intro.
+ *
+ *
+ *
  */
 
 * {
@@ -27,11 +38,13 @@ body {
   width: 80%;
   max-width: 750px;
   margin: 0 auto;
-  background: #23424a;
+}
+
+.intro {
+  background-color: #23424a;
   color: white;
   padding: 50px 0;
 }
-
 .intro-content {
   width: 50%;
 }
