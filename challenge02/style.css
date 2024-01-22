@@ -15,11 +15,11 @@
  * SOLUTION
  * 
  * Changes in HTML
- * 1) Create an `intro` class around our container, which we can add the background color to.
- * 2) Add a container around the additional content
+ * 1) Created an `intro` class around our container, which we can add the background color to.
+ * 2) Added a container around the additional content
  * 
  * Changes in CSS
- * 1) Moved content from .container to .intro as appropriate, and add padding top/bottom to .intro.
+ * 1) Moved content from `.container` to `.intro` as appropriate, and add padding top/bottom to `.intro`.
  *
  *
  *
