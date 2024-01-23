@@ -1,0 +1,54 @@
+/* Base Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 21px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  background-color: #23424a;
+  padding: 7rem;
+}
+
+.container-left {
+  width: 50%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+p {
+  padding: 2rem 0;
+  font-weight: 400;
+}
+
+button {
+  background-color: #38cfd9;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+}
