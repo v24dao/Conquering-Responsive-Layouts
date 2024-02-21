@@ -62,6 +62,7 @@ p {
 .col {
   /* these are now flex items */
   width: 100%;
+  /*For larger projects, consider a separate class that centers text! You may not want centered text on every column. */
   text-align: center;
 }
 
@@ -107,6 +108,7 @@ p {
 }
 
 .sectionOne h2 {
+  /*For larger projects, it would be better to set up a colour class. e.g. .accentColor, .secondaryColor, ...*/
   color: #87629a;
 }
 /*Section 2*/
