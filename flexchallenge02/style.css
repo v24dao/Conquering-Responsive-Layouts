@@ -12,6 +12,7 @@
 
 */
 
+/* -- Base Reset -- */
 *,
 *::before,
 *::after {
@@ -27,6 +28,7 @@ img {
   max-width: 100%;
 }
 
+/* -- Typography -- */
 h1 {
   font-size: 3rem;
   margin-top: 0;
@@ -40,6 +42,7 @@ p {
   font-size: 1.3125rem;
 }
 
+/* -- Reusable components -- */
 .container {
   width: 80%;
   max-width: 1100px;
@@ -64,6 +67,23 @@ p {
   margin-left: 30px;
 }
 
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 900;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+
+/* -- Direct styling -- */
 .hero {
   padding: 100px 0;
   background-color: #23424a;
@@ -101,20 +121,4 @@ p {
   color: #f5f5f5;
   padding: 1.25rem;
   text-align: center;
-}
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #23424a;
-  font-weight: 900;
-  background-color: #38cfd9;
-  padding: 0.75em 2em;
-  border-radius: 100px;
-}
-
-.btn:hover,
-.btn:focus {
-  opacity: 0.75;
 }

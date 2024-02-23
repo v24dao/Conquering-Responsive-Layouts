@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero">
+    <!-- It is good to use Semantics such as header, main, etc. However, it is better to use a div than to use the wrong semantic! -->
+    <header class="hero">
       <div class="container row">
         <div class="hero__text col">
           <h1>Responsive layouts don’t have to be a struggle</h1>
@@ -24,8 +25,10 @@
         </div>
         <div class="hero__img col"><img src="img/hero-img.jpg" alt="" /></div>
       </div>
-    </div>
-    <div class="sectionOne">
+    </header>
+
+    <!-- Kevin used the names main, primary-content and sidebar instead of sectionOne -->
+    <main class="sectionOne">
       <div class="container row">
         <div class="sectionOneLeft col">
           <h2>Quality designs made custom, on demand, just for you</h2>
@@ -63,6 +66,6 @@
           </p>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
