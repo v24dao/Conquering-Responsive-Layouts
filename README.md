@@ -13,9 +13,9 @@ My solutions to The Conquering Responsive Layouts course by Kevin Powell
 - [x] Day 9
 - [x] Day 10
 - [x] Day 11
-- [ ] Day 12
-- [ ] Day 13
-- [ ] Day 14
+- [x] Day 12
+- [x] Day 13
+- [x] Day 14
 - [ ] Day 15
 - [ ] Day 16
 - [ ] Day 17
