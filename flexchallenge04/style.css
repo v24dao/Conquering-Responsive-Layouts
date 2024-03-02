@@ -1,0 +1,117 @@
+/* Base Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Text */
+
+h1 {
+  font-size: 6rem;
+  font-family: 'Playfair', serif;
+  font-weight: 900;
+  color: #824936;
+  line-height: 5rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-family: 'Playfair', serif;
+  font-weight: 800;
+  padding-bottom: 3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 1rem;
+  line-height: 5rem;
+}
+
+p {
+  font-size: 2.1rem;
+  font-weight: 300;
+}
+
+/* Components */
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 50%;
+}
+
+.col + .col {
+  margin-left: 5rem;
+}
+
+.text-center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Sections */
+
+.header {
+  background-color: #f3eed9;
+  padding: 15rem 0;
+}
+
+.header-text {
+  max-width: 72rem;
+}
+
+.section1 {
+  background-color: white;
+  padding: 10rem 0;
+}
+
+.section1 h2 {
+  color: #824936;
+}
+
+.section2 {
+  background-color: #222c2a;
+  padding: 7rem 0;
+  color: white;
+}
+
+.section3 {
+  background-color: #824936;
+  padding: 7rem 0;
+  color: white;
+}
