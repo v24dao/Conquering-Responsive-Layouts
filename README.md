@@ -20,6 +20,6 @@ My solutions to The Conquering Responsive Layouts course by Kevin Powell
 - [x] Day 16
 - [x] Day 17
 - [x] Day 18
-- [ ] Day 19
-- [ ] Day 20
+- [x] Day 19
+- [x] Day 20
 - [ ] Day 21
