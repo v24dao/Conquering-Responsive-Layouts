@@ -6,3 +6,12 @@ html {
 a {
   color: white;
 }
+
+.logo__container {
+  background-color: grey;
+  width: 55px;
+}
+
+.logo {
+  width: 55px;
+}
