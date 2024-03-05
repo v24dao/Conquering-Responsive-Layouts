@@ -78,7 +78,6 @@ header {
   background: #072a2d;
   color: white;
   transition: opacity 250ms ease;
-
   position: absolute;
   left: 0;
 }
@@ -124,8 +123,8 @@ header {
   visibility: hidden;
   height: 0;
   position: absolute;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .nav--visible {
@@ -135,7 +134,7 @@ header {
 }
 
 .nav__list {
-  /* Removes padding left on list so that nav__item are centered*/
+  /* Removes padding left on list so that nav__item are centered... Kevin also margins margin: 0; here as well!*/
   padding: 0;
 }
 
@@ -200,15 +199,13 @@ header {
     flex-direction: row;
     height: auto;
     justify-content: space-between;
+    /* Position relative on this avoids our nav overlapping with the hamburger menu that disappears!*/
+    position: relative;
   }
 
   .nav__list {
     display: flex;
     margin: 0 1rem;
-  }
-
-  .nav__list--primary {
-    margin-left: 6rem;
   }
 
   .nav__item {
