@@ -9,9 +9,17 @@
   <body>
     <!-- Nav -->
     <header>
-      <div class="container">
-        <div class="logo__container"><img class="logo" src="logo.svg" /></div>
-        <nav>
+      <div class="container row">
+        <!-- Nav Toggler -->
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <!-- Logo -->
+        <a class="logo" href="#">
+          <img src="logo.svg" alt="conquering responsive layouts" />
+        </a>
+        <!-- Navbar -->
+        <nav class="nav">
           <ul class="nav__list nav__list--primary">
             <li class="nav__item"><a href="" class="nav__link">HOME</a></li>
             <li class="nav__item"><a href="" class="nav__link">ABOUT</a></li>
@@ -19,7 +27,7 @@
           </ul>
           <ul class="nav__list nav__list--secondary">
             <li class="nav__item"><a href="" class="nav__link">SIGN IN</a></li>
-            <li class="nav__button">
+            <li class="button nav__button">
               <a href="" class="nav__link">SIGN UP</a>
             </li>
           </ul>
@@ -30,21 +38,23 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero__title">
-          Responsive Layouts don't have to be a struggle
+          Responsive Layouts <span>don't have to be a struggle</span>
         </h1>
         <div>
           <p class="hero__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, ed do
             eiusmod tempor incididunt ut labore et dolore magna alliqua
           </p>
-          <button class="hero__button"><a href="">I WANT TO LEARN</a></button>
+          <button class="button hero__button">
+            <a href="">I WANT TO LEARN</a>
+          </button>
         </div>
       </div>
     </section>
     <!-- Features -->
     <section class="features">
-      <div class="container">
-        <div>
+      <div class="container row">
+        <div class="features__section">
           <h2 class="features__title">Mobile-first</h2>
           <p>
             lorem ipsum dolor sit amet, consectetur adipiscing elit, ed do
@@ -52,7 +62,7 @@
             ad mimim venaiam.
           </p>
         </div>
-        <div>
+        <div class="features__section">
           <h2 class="features__title">Efficient</h2>
           <p>
             lorem ipsum dolor sit amet, consectetur adipiscing elit, ed do
@@ -60,7 +70,7 @@
             ad mimim venaiam.
           </p>
         </div>
-        <div>
+        <div class="features__section">
           <h2 class="features__title">Done Right</h2>
           <p>
             lorem ipsum dolor sit amet, consectetur adipiscing elit, ed do
@@ -74,8 +84,8 @@
     <main>
       <div class="container">
         <div class="primary-content">
-          <h2>It doesn't have to be so hard</h2>
-          <p>
+          <h2 class="primary-content__title">It doesn't have to be so hard</h2>
+          <p class="primary-content__text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
             sunt atque eius adipisci quos nesciunt? Laborum odio hic debitis in
             aliquid fuga facilis dolor eius, nisi corporis, fugiat deleniti
@@ -83,7 +93,7 @@
             laudantium dolorem facilis.
           </p>
           <img class="image" src="the-image.jpg" alt="" />
-          <p>
+          <p class="primary-content__text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
             sunt atque eius adipisci quos nesciunt? Laborum odio hic debitis in
             aliquid fuga facilis dolor eius, nisi corporis, fugiat deleniti
@@ -92,25 +102,25 @@
           </p>
         </div>
         <aside class="secondary-content">
-          <div>
-            <h2>Break it down</h2>
-            <p>
+          <div class="secondary-content__section">
+            <h2 class="secondary-content__title">Break it down</h2>
+            <p class="secondary-content__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
               doloribus vel repellendus ad molestiae reiciendis natus atque
               fugiat sit. Consequatur.
             </p>
           </div>
-          <div>
-            <h2>Work your way up</h2>
-            <p>
+          <div class="secondary-content__section">
+            <h2 class="secondary-content__title">Work your way up</h2>
+            <p class="secondary-content__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
               doloribus vel repellendus ad molestiae reiciendis natus atque
               fugiat sit. Consequatur.
             </p>
           </div>
-          <div>
-            <h2>Break it down</h2>
-            <p>
+          <div class="secondary-content__section">
+            <h2 class="secondary-content__title">Break it down</h2>
+            <p class="secondary-content__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
               doloribus vel repellendus ad molestiae reiciendis natus atque
               fugiat sit. Consequatur.
