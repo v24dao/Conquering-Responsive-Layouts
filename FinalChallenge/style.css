@@ -88,8 +88,6 @@ header {
   visibility: hidden;
   height: 0;
   position: absolute;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .nav-toggle {
@@ -283,7 +281,6 @@ main {
 .company-info,
 .footer-nav {
   padding-bottom: 2rem;
-  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -317,9 +314,42 @@ main {
   padding-bottom: 2rem;
 }
 
-.footer
 /* Media Queries */
 @media (min-width: 700px) {
+  /* Extra padding for bigger screens */
+  .hero,
+  .features,
+  main,
+  .footer {
+    padding: 8rem 0;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*We don't want these to be rows just yet -- Readme note*/
+  .row--nav,
+  .row--main,
+  .row--footer,
+  .row--hero {
+    display: block;
+  }
+
+  .features__section + .features__section,
+  .secondary-content__section + .secondary-content__section {
+    margin-left: 3rem;
+  }
+
+  /* Fixed overspilling issues -- Readme note*/
+  .secondary-content__section {
+    max-width: 30%;
+  }
+
+  .footer__title {
+    font-size: 5.5rem;
+    padding-bottom: 6rem;
+  }
 }
 @media (min-width: 1000px) {
   .nav-toggle {
@@ -333,7 +363,7 @@ main {
     height: auto;
     /* Space in between nav__list--primary and nav__list--secondary */
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     /* Position relative on this avoids our nav overlapping with the hamburger menu that disappears!*/
     position: relative;
   }
@@ -350,8 +380,47 @@ main {
     padding: 0 1.5rem;
   }
 
-  .row {
+  .hero {
+    padding: 15rem 0;
+  }
+  .hero__content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 5rem;
+    max-width: 500px;
+  }
+
+  .hero__button {
+    max-width: 55%;
+  }
+  /* Turn into flex-rows */
+  .row--nav,
+  .row--hero,
+  .row--main,
+  .row--footer {
+    display: flex;
+  }
+
+  .row--aside {
+    display: block;
+  }
+
+  .secondary-content__section {
+    max-width: 100%;
+    margin-left: 3rem;
+  }
+
+  .company-info {
+    text-align: initial;
+    max-width: 500px;
+  }
+
+  .footer-navs {
+    width: 1000px;
+    /* background-color: green; */
+  }
+  .footer-nav {
+    margin-left: 10rem;
   }
 }
